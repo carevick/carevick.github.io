@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="cart-icon">
+      <button type="button" name="cart" onclick="showCartItems()">
+        <img src="./img/cart.png" alt="Cart" />
+      </button>
+    </header>
+    <main>
+      <div class="triangle"></div>
+      <div class="cart-items">
+        <!-- place for <h2> -->
+        <nav>
+          <button
+            type="button"
+            onclick="scrollUpButton()"
+            class="scroll-up_button"
+          >
+            <div class="arrow up"></div>
+          </button>
+          <ul>
+            <li>
+              <img
+                class="li-img"
+                src="./img/set_gt-s_cross_drilled.png"
+                alt="Set of GT-S Series Cross Drilled"
+              />
+              <h3>Set of GT-S Series Cross Drilled</h3>
+              <p>
+                Brand: Brembo <br />
+                Color: Red
+              </p>
+              <p class="price">1 x $1770.00</p>
+            </li>
+            <li>
+              <img
+                class="li-img"
+                src="./img/just_disk_gt-s_cross_drilled.png"
+                alt="Just Disk GT-S Cross Drilled"
+              />
+              <h3>Just Disk GT-S Cross Drilled</h3>
+              <p>
+                Brand: Barbour International <br />
+                Size: 405mm
+              </p>
+              <p class="price">1 x $950.00</p>
+            </li>
+            <li>
+              <img
+                class="li-img"
+                src="./img/gt_slotted_2_piece_brake_rotors.png"
+                alt="GT Slotted 2 Piece Brake Rotors"
+              />
+              <h3>GT Slotted 2 Piece Brake Rotors</h3>
+              <p>
+                Brand: Brembo <br />
+                Color: Yellow
+              </p>
+              <p class="price">2 x $1670.00</p>
+            </li>
+            <li>
+              <img
+                class="li-img"
+                src="./img/brake_fluid.png"
+                alt="Brake Fluid"
+              />
+              <h3>Brake Fluid</h3>
+              <p>
+                Brand: Valvoline <br />
+                Type: Dot 3 & 4
+              </p>
+              <p class="price">1 x $9.88</p>
+            </li>
+          </ul>
+          <button
+            type="button"
+            onclick="scrollDownButton()"
+            class="scroll-down_button"
+          >
+            <div class="arrow down"></div>
+          </button>
+        </nav>
+        <div class="buttons-final">
+          <button type="button" class="button-final">Edit Cart</button>
+          <button type="button" class="button-final button-final-2">
+            CHECKOUT
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+    <script type="module">
+      import { initCartHeader } from "./js/header.js";
+      initCartHeader();
+    </script>
+  </body>
+</html>
